@@ -53,4 +53,28 @@ class MatematikaTest extends TestCase
 		$hasilPangkat = Matematika::pangkatBilangan("a", 4);
 		$this->assertEquals(10, $hasilPangkat);
 	}
+
+	public function testTambah()
+	{
+		$hasil = Matematika::tambah(2,3);
+		$this->assertEquals(5, $hasil);
+	}
+
+	public function testKurang()
+	{
+		$hasil = Matematika::kurang(5,4);
+		$this->assertEquals(1, $hasil);
+	}
+
+	public function testKali()
+	{
+		$hasil = Matematika::kali(6,7);
+		$this->assertEquals(42, $hasil);
+	}
+
+	public function testBagi()
+	{
+		$hasil = Matematika::bagi(8,2);
+		$this->assertEquals(4, $hasil);
+	}
 }

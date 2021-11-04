@@ -36,7 +36,7 @@ class MainFunctionTest extends TestCase
 	        $tmw = $day->tomorrow();
 
 	        // Kita assert equal, ekspektasi nya harus 4, jika benar berarti Wordcount berfungsi dengan baik.
-        	$this->assertEquals("Thursday", $tmw);
+        	$this->assertEquals("Friday", $tmw);
     	}
 
 	public function test_kilometers()
